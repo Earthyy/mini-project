@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swith case</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="menumobile.js"></script>
+    <script src="movement.js"></script>
+    
+
+</head>
+<body>
+
+    <header>  
+        <!-- menu bars -->
+        <div class="tabbar" id="tabbar">
+            <ul>
+                <li class="bars" id="bars"><a href="#" id="areabars"><i class="fas fa-bars"></i></a></li> 
+                <ul>
+                <!-- menubra program -->
+                <li class="tabC"><a href="/Mini project/project.html">Home</a></li>                        
+                <!-- Menubra C++ -->
+                <li class="tabC"><a href="#">Code</a>
+                    <ul class="drop">
+                        <li><a href="/Mini project/loop while.html" target="_balnk">Loop While</a></li>
+                        <li><a href="/Mini project/loop for.html"  target="_balnk" >Loop For</a></li>
+                        <li><a href="/Mini project/loop swithcase.html">Swith Case</a></li>
+                    </ul>
+                </li>
+                                       
+                <!-- เลื่อนเเถบหน้าจอตาม -->                    
+                <script src="movement.js" class="js"></script>
+            </ul>
+        </div>            
+    </header>
+
+    <main id="main">
+        <section class="position" id="while">
+            <!-- while loop -->
+            <header>
+                <h1>Swith Case</h1>
+                <p>บอกโรคต่างๆที่คนไข้เป็น ตามที่กำหนด</p>
+                <article>
+                    <h2>Codding to C program</h2>
+                </article>
+                <pre>
+                    <code class="codding" id="codding">
+
+        #include <stdio.h>
+
+
+        int main(void) {
+
+
+	        int x;
+	        printf("set your Value 1-6: ");
+	        scanf_s("%d", &x);
+
+	        switch (x) {
+
+	        case 1:
+		        printf("case is heart disease\n");
+		        /*โรคหัวใจ*/
+		        break;
+
+	        case 2:
+		        printf("case is diabetes\n");
+		        /*โรคเบาหวาน*/
+		        break;
+
+	        case 3:
+		        printf("case is osteoporosis\n");
+		        /*โรคกระดูกพรุน*/
+		        break;
+
+	        case 4:
+		        printf("case is gastritis\n");
+		        /*โรคกระเพาะอาหารอักเสบ*/
+		        break;
+
+	        case 5:
+		        printf("case is depression\n");
+		        /*ภาวะซึมเศร้า*/
+		        break;
+
+	        case 6:
+		        printf("case is allergy\n");
+		        /*โรคภูมิเเพ้*/
+		        break;
+
+            default :
+                printf("case is can't find\n");
+                /*หาไม่เจอ*/
+                break;
+                }
+		return 0;
+	    }
+                    </code>
+
+                </pre>
+                <h3>swithcase นั้นจะทำงานตามเงื่อนไขของตัวเเปลที่เรากำหนด โดยจะเเสดงค่าออกตามปลิ้น F ของเเต่ล่ะ case<br>
+                    โดยเราต้องกำหนด case เเต่ล่ะ case ด้วยตัวเลขลงท้ายข้างหลัง เพื่อให้ switch เลือก case ที่ตรงกับค่าข้อมูลใน x
+                </h3>
+                    <img src="/Mini project/รูปภาพ/switch case.png" alt="" class="image">
+                <pre>
+                    <code>
+            #include < stdio.h >
+                    </code>
+                </pre>
+                <h3>
+                    #include คือคำสั่งการใช้ function ของ library < stdio.h >
+                </h3>
+
+                <pre>
+                    <code>
+            int x;
+	        printf("set your Value 1-6: ");
+	        scanf_s("%d", &x);
+                    </code>
+                </pre>
+                <h3>
+                    กำหนดค่าค่าให้ตัวเเปล x เก็บค่าข้อมูลตัวเลขจำนวนเต็ม 1 ตัว <br>
+                    printf("set your Value 1-6: "); แสดงผลขึ้นหน้าจอ บอกว่าให้ใส่ตัวเลข 1-6 <br>
+                    scanf_s("%d", &x); ใส่ค่าตัวเลข 1-6 
+                </h3>
+                <img src="/Mini project/รูปภาพ/switch scanf.png" alt="" class="image">
+
+                <pre>
+                    <code>
+            switch (x) {
+                ......
+                }		
+	    }
+                    </code>
+                </pre>
+                <h3>
+                    กำหนดให้ switch นั้นใช้ค่าในตัวเเปล x เพื่อไปค้นหาค่าในเเต่ละ case อีกที
+                </h3>
+
+                <pre>
+                    <code>
+            {
+
+	        case 1:
+		        printf("case is heart disease\n");
+		        /*โรคหัวใจ*/
+		        break;
+
+	        case 2:
+		        printf("case is diabetes\n");
+		        /*โรคเบาหวาน*/
+		        break;
+
+	        case 3:
+		        printf("case is osteoporosis\n");
+		        /*โรคกระดูกพรุน*/
+		        break;
+
+	        case 4:
+		        printf("case is gastritis\n");
+		        /*โรคกระเพาะอาหารอักเสบ*/
+		        break;
+
+	        case 5:
+		        printf("case is depression\n");
+		        /*ภาวะซึมเศร้า*/
+		        break;
+
+	        case 6:
+		        printf("case is allergy\n");
+		        /*โรคภูมิเเพ้*/
+		        break;
+
+            default :
+                printf("case is can't find\n");
+                /*หาไม่เจอ*/
+                break;
+                }
+                    </code>
+                </pre>
+                <h3>
+                    ค้นหาค่าที่ตรงกับตัวเเปล x ที่เก็บค่าข้อมูลตัวเลขเอาไว้ โดยเเต่ล่ะ case จะมีตัวเลขตามหลังเพื่อให้  <br><br>
+                    ภายใน loop เงื่อนไขตัวนี้เราเรียกว่า expression
+                </h3>
+
+                <img src="/Mini project/รูปภาพ/switch case end.png" alt="" class="image">
+        </section>
+    </main>
+    
+</body>
+</html>
