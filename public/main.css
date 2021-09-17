@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(36, 34, 34);   
+    max-width: 100%;
+}
+
+header {
+    margin: 2% 2%;
+}
+
+.bars {
+    width: 90px;
+    padding: 1% 1%;
+    display: block;
+    list-style: none;
+    border-radius: 20px;
+    background-color: rgb(59, 63, 63);
+}
+
+/* Set ค่าเมนูมือถือ */
+.tabC {
+    display: none;
+    padding: 1% 5%;
+}
+
+.tabC.active {
+    display: block;
+}
+
+.tabbar ul {
+    list-style: none;
+    background-color: rgb(59, 63, 63);
+    text-align: center;    
+    margin: 0 1%;
+    border-radius: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.tabbar li {
+    font-size: 1.5rem;
+} 
+
+.tabbar ul li ul a {
+    font-size: 1.1rem;
+
+}
+
+.tabbar a {
+    color: rgb(243, 243, 243);
+    text-decoration: none;
+    display: block;
+    transition: .65s;
+}
+
+.tabbar ul li ul li a:hover {
+    background-color: rgb(0, 0, 0);
+    border: 4px solid rgb(231, 213, 213);
+}
+
+.tabbar a:hover {
+    color: rgb(255, 166, 0);   
+    border-radius: 20px;
+    transition: .36s;
+    border-radius: 20px;
+}
+
+/* main */
+#main  {
+    padding: 0 5%; 
+    color: aliceblue;  
+}
+
+.position h1{
+    font-size: 1.95rem;
+    color: rgb(255, 255, 255);
+}
+
+.position h2{
+    font-size: 1rem;
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+
+.position h3 {
+    font-size: .85rem;
+    color: rgb(255, 255, 255);
+}
+
+.position pre {
+    max-width: 300px;
+    margin:  0;
+    display: inline-block;
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 20px;
+    font-size: .75rem;
+}
+
+#main .image {
+    margin: 0 1%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width: 301px) {
+    .position pre {
+        max-width: 100%;
+        margin:  0;
+        display: block;
+        background-color: antiquewhite;
+        color: black;
+        border-radius: 20px;
+        font-size: .75rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    
+    .bars {
+        display: block;
+        list-style: none;
+    }  
+ 
+    /* Set ค่าเมนูมือถือ */
+    .tabC {
+        display: none;
+    }
+    
+    .tabC.active {
+        display: block;
+    }
+
+    .tabbar li {
+        font-size: 2.5rem;
+        padding: 0;
+        margin: 0;
+    } 
+    
+    .tabbar ul li ul a {
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+    
+    }
+
+    .position h1{
+        margin:  2% 0;
+        font-size: 4rem;
+        color: rgb(255, 255, 255);
+    }
+    
+    .position h2{
+        margin:  2% 0;
+        font-size: 3rem;
+        padding: 0;
+        color: rgb(255, 255, 255);
+    }
+    
+    .position h3 {
+        margin:  2% 0;
+        font-size: .85rem;
+        color: rgb(255, 255, 255);
+    }
+    
+
+    .position pre {
+        display: block;
+        font-size: 1rem;    
+    }
+}
+
+@media screen and (min-width: 900px) {  
+
+     /* /* menubras */
+    
+    header {
+        margin: 0;
+    }
+    .tabbar .bars {
+        display: none;
+    }
+
+    .tabbar {
+        width: 50%;
+        padding: 0;
+        margin: 0  25%;
+        max-width: 100%;
+        margin-top: 10px;         
+    }
+
+    .tabbar  {
+        text-align: center;
+    }
+
+    .tabbar li {
+        font-size: 3rem;
+    } 
+    
+    .tabbar ul li ul a {
+        font-size: 2.1rem;
+    
+    }
+
+    .tabbar li {
+        width: 230px;
+        border-bottom: 0;
+        display: inline-block;
+        padding: 0;
+        text-align: center;
+    }
+
+    .tabbar li ul {
+        position: absolute;
+        display: none;
+        width: inherit;
+    }
+
+    .tabbar li:hover ul {
+        text-align: center;
+        display: block;
+        margin-top: .75px;   
+    }
+
+    .tabbar li:hover {
+        color: rgb(255, 208, 0);
+        background-color: rgb(0, 0, 0);
+        border-radius: 20px;
+        transition: .52s;
+    }
+
+    .position p {
+        font-size: 1.25rem;
+    }
+
+
+    .position h1{
+        margin:  2% 0;
+        font-size: 4rem;
+        color: rgb(255, 255, 255);
+    }
+    
+    .position h2{
+        margin:  2% 0;
+        font-size: 3rem;
+        padding: 0;
+        color: rgb(255, 255, 255);
+    }
+    
+    .position h3 {
+        margin:  2% 0;
+        font-size: 1.5rem;
+        color: rgb(255, 255, 255);
+    }
+    
+
+    .position pre {
+        display: block;
+        font-size: 1.5rem;    
+    }
+} 

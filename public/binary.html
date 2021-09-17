@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary</title>
+    
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="menumobile.js"></script>
+
+</head>
+<body>
+
+    <header>  
+        <!-- menu bars -->
+        <div class="tabbar" id="tabbar">
+            <ul>
+                <li class="bars" id="bars"><a href="#" class="areabars"><i class="fas fa-bars"></i></a></li>
+                <!-- menubra program -->
+                <li class="tabC"><a href="https://mini-project-e5a7e.web.app/">Home</a></li>                        
+                <!-- Menubra C++ -->
+                <li class="tabC"><a href="#">Code C++</a>
+                    <ul class="drop">
+                        <li><a href="loop while.html">Loop While</a></li>
+                        <li><a href="loop swithcase.html" >Swith Case</a></li>
+                        <li><a href="loop for.html">Loop For</a></li>
+                        <li><a href="loop swithcase.html">Swith Case</a></li>                        
+                   </ul>
+                </li>
+                <li class="tabC"><a href="#">Example</a>
+                    <ul class="drop">
+                        <li><a href="Octal.html">Octal</a></li>
+                        <li><a href="hexane.html">hexane</a></li>
+                    </ul>
+                </li>
+                                        
+                <!-- เลื่อนเเถบหน้าจอตาม -->                    
+                <script src="movement.js"></script>
+            </ul>
+        </div>            
+    </header>
+
+    <main id="main">
+        <section class="position" id="binary">
+            <!-- while loop -->
+            <header>
+                <h1>Binary</h1>
+                <p>การเเปลงเลขฐาน 10 เป็นฐาน 2</p>
+                <article>
+                    <h2>Coding to C program</h2>
+                </article>
+                <pre>
+                    <code class="codding">
+    #include < stdio.h >
+
+    int main() {
+
+        int dec;
+        int b[100];
+        int i = 0; 
+        int j;
+
+        printf("Enter decimal number ");
+        scanf_s("%d", &dec);
+
+        do {
+            b[i] = dec % 2;
+            dec /= 2;
+            i++;
+        } while (dec > 0);
+        printf("\n\nBinary is ");
+        for (j = i - 1; j >= 0; j--) {
+            printf("%d", b[j]);
+        }
+        return 0;
+    }
+                    </code>
+
+                </pre>
+                <h3>    <br>
+                    
+                </h3>
+                    <img src="Example ภาพ/binary.png" alt="" class="image"><br><br>
+                <pre>
+                    <code>
+            int dec;
+            int b[100];
+            int i = 0; 
+            int j;
+                    </code>
+                </pre>
+                <h3>
+                    1) กำหนดค่าตัวเเปล ตรง int b จะมีความพิเศษ เพราะมีการกำหนดค่าให้เก็บมีข้อมูลได้ถึง 100 ตัว
+                </h3>
+
+                <pre>
+                    <code>
+            printf("Enter decimal number ");
+            scanf_s("%d", &dec);
+                    </code>
+                </pre>
+                <h3>
+                    2) printf("....") แสดงค่าบอกให้ป้อนตัวเลขฐาน10 หรือ decimal number <br>
+                    3) scanf_s("%d", &dec); ป้อนค่าตัวเลขฐาน 10 เเละเก็บค่าลงใน ตัวแปล dec
+                </h3>
+                <img src="Example ภาพ/binary step Add .png" alt="" class="image">
+
+                <pre>
+                    <code>
+            do {
+                b[i] = dec % 2;
+                dec /= 2;
+                i++;
+            }while (dec > 0);
+                    </code>
+                </pre>
+                <h3>
+                   <b>เป็นขั้นตอนการเเปลงเลขฐาน</b><br>
+                   5) จะเริ่มจาก b[i] = dec % 2; นำข้อมูลที่เก็บไว้ใน dec มาหาร 2 เเละนำเก็บไว้เศษใน b และจะไม่เปลี่ยนค่าข้อมูลลของ dec เเละจะได้เลขเฉพาะ 1 เเละ 0 เท่านัน<br>
+                   6) dec /= 2; นำข้อมูลที่เก็บไว้ใน dec มาหาร 2 พร้อมทั้งเเทนค่าผลลัพท์ลงที่ได้มีลงใน dec เเละเป็นตัวที่จะทำให้ค่าของเรานั้นมีเศษเเค่ 1 เเละ 0 <br>
+                   7) i++; บวกจำนวนครั้งลงใน i <br>
+                   8) เช็คเงื่อนไขของ dec ว่าค่านั้นน้อยกว่า 0 แล้วหรือยัง ด้วย while (dec > 0); หากน้อยกว่าเเล้วการทำงานจะหลุดออกจาก loop ทันที
+
+                </h3>
+                
+                <pre>
+                    <code>
+            while (dec > 0);
+                printf("\n\nBinary is ");
+                for (j = i - 1; j >= 0; j--) {
+                printf("%d", b[j]);
+            }
+            return 0;
+                    </code>
+                </pre>
+                <h3>
+                    9) หลังจากการทำงานหลุดออกจาก Do while เเล้วจะเเสดงข้อความ ตามใน printf 1 ครั้ง<br>
+                    10) เข้าสู่ loop for<br>
+                    11) โดยที่จะนำข้อมูลตัวเลขที่เก็บไว้ใน i มาเเสดงผลลงใน b[j] ขึ้นหน้า Output เเละค่อยๆลดลงเรื่อยๆ จนค่า j = i - 1 เป็น 0 จึงออกจาก Loop
+                 </h3>
+                 <img src="Example ภาพ/binary end.png" alt="" class="image">
+
+                
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "mini-project-e5a7e"
+  },
+  "targets": {
+    "mini-project-e5a7e": {
+      "hosting": {
+        "tr": [
+          "loopwhile.web.app"
+        ],
+        "en": [
+          "mini-project-e5a7e.web.app"
+        ]
+      }
+    }
+  }
+}

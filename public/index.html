@@ -1,89 +1,132 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini-project</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.0.2/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.0.2/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.0.2/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.0.2/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.0.2/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.0.2/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.0.2/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.0.2/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.0.2/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.0.2/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="menumobile.js"></script>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+</head>
+<body>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is  initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <header id="menubar" class="menubar">
+            <h1 class="sectionheader">C programing</h1>     
+                      
+        <h3>            
+            <ol>
+                <li class="bars" id="bars"><a href="#"><i class="fas fa-bars"></i></a></li>
+                <!-- menubra program -->
+                <li class="tabC"><a href="#">Visual Studio</a>
+                    <ul class="drop">
+                        <li><a href="#download" >download</a></li>
+                        <li><a href="#How to" >How to use program</a></li>
+                    </ul>
+                </li>
+                <!-- Menubra C++ -->
+                <li class="tabC"><a href="#">C++ loop</a>
+                    <ul class="drop">
+                        <li><a href="loop while.html">Loop While</a></li>
+                        <li><a href="loop dowhile.html">Loop Do While</a></li>
+                        <li><a href="loop for.html">Loop For</a></li>
+                        <li><a href="loop swithcase.html">Swith Case</a></li>
+                    </ul>
+                </li>
+                <li class="tabC"><a href="#">Example</a>
+                    <ul class="drop">
+                        <li><a href="binary.html">Binary</a></li>
+                        <li><a href="Octal.html">Octal</a></li>
+                        <li><a href="hexane.html">hexane</a></li>
+                    </ul>
+                </li>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+            </ol>
+        </h3>
+        
+    </header>
+
+    <main id="main">
+
+        <!-- Vs 2019 download -->
+        <section class="position" id="download">
+            <header>
+                <h1>
+                    Visual Studio
+                </h1>
+
+                <h2>
+                <button><b><a href="https://visualstudio.microsoft.com/downloads/" class="effect" target="_balnk">ดาวน์โหลด</a></button>
+                </h2>
+
+                <h2>
+                    ขั้นตอนการ ดาวน์โหลด
+                </h2>
+                <img src="รูปภาพ/down Vs for windows.png" alt="" class="vs">
+                <img src="รูปภาพ/down Vs for macOS.png" alt="" class="vs">
+                <h3>
+                    เลือกติดตั้งตามระบบปฎิบัติการ(OS)ที่ตัวเองใช้ได้เลย
+                </h3>
+                <img src="รูปภาพ/localtion.png" alt="" class="vs">
+                <h3>
+                    เลือกตำเเห่งที่จะดาวน์โหลดไฟล์
+                </h3>
+                <img src="รูปภาพ/opend dow.png" alt="" class="vs">
+                <h3>
+                    กดเปิดเพื่อดาวน์โหลดลงเครื่อง จากนั้นกด <b>"กดเรียกใช้"</b>
+                </h3>
+                <img src="รูปภาพ/เลือก.png" alt="" class="vs">
+                <h3>
+                    เลือกชนิดของภาษาที่ต้องการ ในที่นี้คือ C++ หรือจะเลือกตัวอื่นด้วยก็ได้ แล้วกด "Install"
+                </h3>
+                <img src="รูปภาพ/wait.png" alt="" class="vs">
+                <h3>หลังจากดาวน์โหลดเสร็จสิ้น ระบบจะให้รีสตาร์ท <br>
+                    เมื่อรีสตาร์ทเสร็จให้กดเข้าโปรมเเกรมใหม่อีกรอบเเล้วจึง loigin ผ่าน Microsoft</h3>
+            </head>
+        </section>
+        
+        <!-- How to ues -->
+        <section class="position" id="How to">
+            <!-- while loop -->
+            <header>
+                <h2>การใช้งานโปรแกรมเบื่องต้น</h2><br>
+                    
+                
+                <h2></h2>
+                <img src="รูปภาพ/Create project.png" alt="" class="image">
+                <h3>
+                   เปิดโปรเเกรมเเล้วกด ที่ <b>Ceate a new project</b> 
+                </h3>
+                <h2></h2>
+                <img src="รูปภาพ/Create project step2.png" alt="" class="image">
+                <h3>
+                   เลือกภาษาที่เราจะใช้เขียนในที่คือ C++ จึงใช้ EmPty Project เเล้วจึงกด Next 
+                </h3>
+                <h2></h2>
+                <img src="รูปภาพ/Create project step3.png" alt="" class="image">
+                <h3>
+                   ให้เราตั้งชื่อไฟล์ที่เราอยากตั้ง เเล้วกด Create 
+                </h3>
+                <h2></h2>
+                <img src="รูปภาพ/Create project step4.png" alt="" class="image">
+                <h3>
+                   ให้คลิกขวาที่ Source Flies เพื่อ add project
+                </h3>
+                <h2></h2>
+                <img src="รูปภาพ/Create project step5.png" alt="" class="image">
+                <h3>
+                   นำเมาท์ไปชี้ที่ add เเล้วเลื่อนซ้ายไปกด New Item
+                </h3>
+                <img src="รูปภาพ/Create project step6.png" alt="" class="image">
+                <h3>
+                   เลือก C++ files(.cpp) เเล้ว กด Add 
+                </h3>
+                <img src="รูปภาพ/Create project step7.png" alt="" class="image">
+                 
+        </section>
+ 
+</body>
 </html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="menumobile.js"></script>
+    
+</head>
+<body>
+
+    <header>  
+        <!-- menu bars -->
+        <div class="tabbar" id="tabbar">
+            <ul>
+                <li class="bars" id="bars"><a href="#" class="areabars"><i class="fas fa-bars"></i></a></li>  
+
+                <!-- menubra program -->
+                <li class="tabC" ><a href="https://mini-project-e5a7e.web.app/">Home</a></li>                        
+                <!-- Menubra C++ -->
+                <li class="tabC" ><a href="#">Code C++</a>
+                    <ul class="drop">
+                        <li><a href="loop while.html">Loop While</a></li>
+                        <li><a href="loop dowhile.html">Loop Do While</a></li>
+                        <li><a href="loop swithcase.html">Swith Case</a></li>
+                    </ul>
+                </li>
+                <li class="tabC"><a href="#">Example</a>
+                    <ul class="drop">
+                        <li><a href="binary.html">Binary</a></li>
+                        <li><a href="Octal.html">Octal</a></li>
+                        <li><a href="hexane.html">hexane</a></li>
+                    </ul>
+                </li>
+                                      
+                <!-- เลื่อนเเถบหน้าจอตาม -->                    
+                <script src="movement.js" class="js"></script>
+            </ul>
+        </div>            
+    </header>
+
+
+<main id="main">
+    <!-- for -->
+<section class="position" id="for">
+            
+            
+    <header>
+            <!-- for loop -->
+            <header>
+                <h1>Loop For</h1>
+                <p>การทำพีระมิด ด้วยเครื่องหมาย *(ดอกจันทร์)</p>
+                <article>
+                    <h2>Coding to C program</h2>
+                </article>
+                <pre>
+                    <code class="codding">
+    #include < stdio.h >
+
+    int main() {
+
+        int i;
+        int j;
+    
+        for (i = 1; i <= 10; i++) {
+
+            for (j = 1; j <= i; j++) {		
+
+                printf(" *");
+
+            }
+
+            printf("\n");
+        }
+
+        return 0;
+    }              
+                    </code>
+                </pre>                        
+                <h3>
+                    โดย loop for นั้นเป็นการใช้คำสั่งทำการทำงานซ้ำๆตามเงื่อนไขที่เรากำหนด <br>
+                    หากเงื่อไขยังเป็นจริงอยู่ก็จะทำไปเรื่อยๆ เเต่หากเงื่อไขเป็นเท็จเเล้วจะหลุดออกจาก loop ทันที่ <br>
+                </h3>
+                <img src="รูปภาพ/for loop.png" alt="" class="image">
+                
+                <pre>
+                    <code>
+            #include < stdio.h > 
+                    </code>
+                </pre>
+                <h3>
+                    1) #include คือคำสั่งการใช้ function ของ library <stdio.h>
+                </h3>
+                <pre>
+                    <code>
+            for (i = 1; i <= 10; i++) {
+                ......
+            }
+                    </code>
+                </pre>
+                <h3>
+                    2) การกำหนดเงื่อนไขให้ค่า i ทำงานวนลูปทั้งหมด 10 ครั้ง<br><br>
+                    โดยจะเพิ่มไปเรื่อยตามเงื่อนไข i++
+                </h3>
+                <pre>
+                    
+                    <code>
+            {
+                for (j = 1; j <= i; j++) {		
+
+                    printf(" *");
+
+            }
+
+            printf("\n");
+        
+                    </code>
+                </pre>
+                <h3>
+                    3) เงื่อนไขที่ว่าด้วย การเเสดงผลของตัวเเปล j ในรูปเเบบของ *(ดอกจันทร์)<br>
+                    6) โดยทำงานวนลูปห้ามมากกว่าจำกัดของ i หรือ น้อยกว่าเท่ากับ 10
+                </h3>
+                <pre>
+                    <code>
+                return 0;
+                    </code>
+                </pre>
+                <h3>
+                    5) return 0; คำสั่งการรีเทริน์ค่ากลับไปยัง library เพื่อจบการทำงาน
+                </h3>
+                <img src="รูปภาพ/พีระมิด.png" alt="" class="image">
+            </header>
+</section>
+</main>
+    
+</body>
+</html>
