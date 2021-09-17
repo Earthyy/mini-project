@@ -4,11 +4,6 @@ body {
     background-color: rgb(36, 34, 34);
     max-width: 100%;
 }
-
-#menubar {  
-    width: 100%;    
-}
-
 #menubar h1 {
     font-size: 50px;
     text-align: center;
@@ -40,11 +35,23 @@ body {
     display: block;   
 }
 
+#menubar i {
+    font-size: 20px;
+}
+
+#menubar a {
+    font-size: 15px;
+    margin: 2px 0;
+}
+
+#menubar ol li {
+    font-size: 10px;
+}
+
 #menubar li a {
     display: block;
     text-decoration: none;
 }
-
 
 #main {
     width: 80%;
@@ -157,20 +164,40 @@ body {
     body {
         margin: 0;
         padding: 0;
-        height: 50vh;
         background-color: rgb(253, 253, 253);
     }
 
     #menubar {
         background-color: rgb(36, 34, 34);
+        height: 100%;
         width: 100%;
+        padding: 10px 0;       
         overflow: auto;
+    }
+
+    #menubar i {
+        font-size: 30px;
+    }
+
+    #menubar a {
+        font-size: 1.75rem;
+    }
+
+    #menubar ol li ul li a{
+        font-size: 1.15rem;
+        padding: 0;
+        margin: 0;
     }
 
     #menubar ul {   
         list-style: none;
     }
-   
+
+    #menubar li > .tabC {
+        margin: 0;
+        padding: 0;
+    }
+
     #menubar h1 {
         font-size: 30px;
         text-align: center;
@@ -283,14 +310,11 @@ body {
         width: 25%;
         height: 100%;
         position: fixed;
-        overflow: auto;
-        
+        overflow: auto;       
     }
 
     #menubar .sectionheader {
-       margin: 3vh 1vh;
-
-       
+       margin: 3vh 1vh;  
     }
     
     #menubar .bars {
@@ -309,17 +333,33 @@ body {
         background-color: #000; 
         border-radius: 15px;     
     }
-
+    
     #menubar ol {
+        width: 70%;
         padding: 0;
-        margin: 0 6%;
+        margin: 0 15%;
     }
 
     #menubar ol  li ul li {
         text-align: center;
     }
+    
+    #menubar a {
+        font-size: 2rem;
+    }
+        
+    #menubar ol li ul li a{
+        font-size: 1.15rem;
+        padding: 10px ;
+        margin: 0;
+    }
+
+    #menubar ol li {
+        width:  90%;
+    }
 
     #menubar ol li a:hover {
+        width: 100%;
         background-color: rgb(252, 151, 0);
         color: rgb(2, 2, 2);
         transition: .55s;
@@ -340,22 +380,14 @@ body {
     #menubar li:hover > .drop {
         display: inline-block;  
     }   
-    
-    #menubar li {
-        font-size: 25px;
-        max-width: 100%;
-        width: 100%;   
-    }
-    
+
     #menubar li a {
         padding: 10px 0;
         color: aliceblue;        
     }
     
-
     #menubar .drop a:hover {
-        padding-left: 10px;  
-        width: 100%;
+        padding-left: 20px;  
         border-right: 10px solid rgb(250, 222, 62);
         transition: .75s;         
     }
