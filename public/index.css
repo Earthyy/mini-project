@@ -35,12 +35,17 @@ body {
     display: block;   
 }
 
+.drop {
+    padding: 0 16px;
+}
+
 #menubar i {
     font-size: 20px;
 }
 
 #menubar a {
     font-size: 15px;
+    padding: 0;
     margin: 2px 0;
 }
 
@@ -284,8 +289,7 @@ body {
     #menubar .tabC {
         font-size: 25px;   
     }
-
-    
+   
     #menubar .drop a:hover {
         width: 80%;
         padding: 5px 20px;
