@@ -14,6 +14,7 @@ body {
     border-radius: 15px;
 }
 
+
 #menubar li a {
     color: aliceblue;       
 }
@@ -318,7 +319,8 @@ body {
     }
 
     #menubar .sectionheader {
-       margin: 3vh 1vh;  
+        padding: 5px 0;
+       margin: 2vh 1vh;  
     }
     
     #menubar .bars {
